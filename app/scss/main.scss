@@ -1,0 +1,685 @@
+@import 'config';
+
+#item-one {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.background {
+  background-image: url("../images/src/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-areas: 'header' 'content';
+  grid-template-rows: 1fr 7fr;
+  width: 80%;
+
+  .header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .kasko-image {
+      margin-left: 35px;
+    }
+
+    .botton-consultation {
+      border: 0;
+      border-radius: 6px;
+      opacity: 0.7;
+      font-size: 12px;
+      color: #6aabb5;
+      padding: 9px 18px 9px 12px;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      .icon-botton {
+        margin-right: 12px;
+        color: #6aabb5;
+        height: 15px;
+      }
+    }
+  }
+
+
+  .content {
+    background-image: url("../images/src/img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: content;
+    height: 85%;
+    border-radius: 10px;
+    border: 2px solid #88a2c7;
+
+    .container-selection-kasko {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 93%;
+      width: 100%;
+
+      .text-container {
+        text-align: center;
+
+        h1 {
+          color: white;
+          font-size: 50px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold;
+        }
+
+        p {
+          color: white;
+          line-height: 14px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: lighter;
+
+          span {
+            color: #ff9604;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+          }
+        }
+      }
+
+
+      .form-selection-auto {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+
+        span {
+          color: #ff9604;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold;
+        }
+
+        select {
+          padding: 7px 0 9px 6px;
+          border: 0;
+          border-radius: 4px;
+          margin-bottom: 15px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: lighter;
+          width: 230px;
+        }
+
+        button {
+          color: white;
+          border: 0;
+          background-color: #ff9604;
+          border-radius: 4px;
+          font-family: 'Noto Sans', sans-serif;
+          font-weight: bold;
+          width: 230px;
+          height: 40px;
+
+          &:hover {
+            background-color: #FF9D02;
+          }
+        }
+      }
+
+      .icons-firms {
+        height: 75px;
+        padding: 20px 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+
+    .footer-content {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding-left: 5px;
+      padding-bottom: 3px;
+
+      .icon-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../images/src/shape.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100px;
+        height: 26px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: lighter;
+        font-size: 15px;
+      }
+
+      .text-footer {
+        margin-left: 10px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: lighter;
+
+        span {
+          color: #ff9604;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+// section 2 ------------------------------------------------------->
+
+#item-two {
+  //background-image: url("../images/src/bg.jpg");
+  //background-position: center;
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  //display: grid;
+  //grid-template-areas: 'header' 'content';
+  //grid-template-rows: 1fr 7fr;
+  width: 80%;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 90%;
+      width: 74%;
+
+      .selected-offers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .heading-offers {
+
+        h1 {
+          display: flex;
+          justify-content: center;
+          color: white;
+          font-size: 50px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold;
+        }
+      }
+
+      ul {
+        padding-left: 15px;
+
+        li {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: lighter;
+          color: white;
+
+          span {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            color: #ff9604;
+          }
+        }
+      }
+
+      .offers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+
+        .text-offers {
+          span {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+          }
+
+          h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            color: #ff9604;
+
+            span {
+              color: #ff9604;
+              font-size: 30px;
+            }
+          }
+        }
+
+        .icons-offers {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+
+      .data-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+          font-size: 14px;
+          color: #ff9604;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold;
+        }
+
+        input {
+          border: 0;
+          border-radius: 4px;
+          width: 220px;
+          height: 40px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: lighter;
+          font-size: 12px;
+          padding-left: 12px;
+        }
+
+        .flex-button {
+          .show-span {
+            color: #26313c;
+          }
+
+          button {
+            color: white;
+            border: 0;
+            background-color: #ff9604;
+            border-radius: 4px;
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: bold;
+            width: 220px;
+            height: 40px;
+
+            &:hover {
+              background-color: #FF9D02;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// section 3 ------------------------------------------------------->
+
+#item-three {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 80%;
+
+    .content {
+      height: 85%;
+      border-radius: 10px;
+      border: 2px solid #88a2c7;
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        width: 100%;
+
+        h1 {
+          color: white;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold;
+          font-size: 45px;
+        }
+
+        h2 {
+          color: #ff9704;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .logo-image {
+    width: 115px;
+    height: 25px;
+  }
+  .kasko-image {
+    width: 35px;
+    margin-left: 12px
+  }
+
+  .icon-botton {
+    width: 10px;
+    height: 7px;
+    margin-right: 4px;
+  }
+  #item-one .container .header .button-consultation {
+    //width: 140px;
+    //height: 20px;
+    font-size: 8px;
+  }
+  #item-one .container .content .text-container h1 {
+    font-size: 18px;
+  }
+  #item-one .container .content p {
+    font-size: 14px;
+  }
+  #item-one .container .content span {
+    font-size: 14px;
+  }
+  #item-one select {
+    height: 25px;
+    font-size: 15px;
+    width: 120px;
+  }
+  #item-one button {
+    font-size: 15px;
+    width: 120px;
+    height: 25px;
+  }
+  #item-one .icons-firms {
+    height: 70px;
+
+    img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  #item-one .icon-footer {
+    font-size: 8px;
+    width: 50px;
+    height: 18px;
+  }
+  #item-one .text-footer, span {
+    font-size: 10px;
+  }
+  // -----> second section
+  #item-two .container .content h1 {
+    font-size: 18px;
+  }
+  #item-two .container .content .selected-offers ul li {
+    font-size: 12px;
+  }
+  #item-two .container .content .selected-offers span {
+    font-size: 12px;
+  }
+  #item-two .container .content .selected-offers .offers span {
+    font-size: 12px;
+  }
+  #item-two .container .content .selected-offers .offers h4 {
+    font-size: 12px;
+  }
+  #item-two .icons-offers {
+    img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  #item-two .data-form span {
+    font-size: 12px;
+  }
+  #item-two .data-form input {
+    font-size: 15px;
+    width: 120px;
+    height: 25px;
+  }
+  #item-two .data-form button {
+    font-size: 8px;
+    width: 120px;
+    height: 25px;
+  }
+
+
+  #item-three .container .content .wrapper h1 {
+    font-size: 18px;
+  }
+
+  #item-three .container .content h2 {
+    font-size: 14px;
+  }
+}
+ // ------------------>
+@media (max-width: 625px) {
+  .logo-image {
+    width: 100px;
+    height: 20px;
+  }
+  .kasko-image {
+    width: 25px;
+    margin-left: 8px
+  }
+
+  .icon-botton {
+    width: 7px;
+    height: 7px;
+    margin-right: 4px;
+  }
+  #item-one .container .header .button-consultation {
+    width: 140px;
+    height: 20px;
+    font-size: 8px;
+  }
+  #item-one .container .content .text-container h1 {
+    font-size: 14px;
+  }
+  #item-one .container .content p {
+    font-size: 12px;
+  }
+  #item-one .container .content span {
+    font-size: 12px;
+  }
+  #item-one select {
+    height: 18px;
+    font-size: 12px;
+    width: 100px;
+  }
+  #item-one button {
+    font-size: 12px;
+    width: 100px;
+    height: 18px;
+  }
+  #item-one .icons-firms {
+    height: 50px;
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  #item-one .icon-footer {
+    font-size: 6px;
+    width: 40px;
+    height: 14px;
+  }
+  #item-one .text-footer, span {
+    font-size: 8px;
+  }
+  // -----> second section
+  #item-two .container .content h1 {
+    font-size: 14px;
+  }
+  #item-two .container .content .selected-offers ul li {
+    font-size: 10px;
+  }
+  #item-two .container .content .selected-offers span {
+    font-size: 10px;
+  }
+  #item-two .container .content .selected-offers .offers span {
+    font-size: 10px;
+  }
+  #item-two .container .content .selected-offers .offers h4 {
+    font-size: 10px;
+  }
+  #item-two .icons-offers {
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  #item-two .data-form span {
+    font-size: 10px;
+  }
+  #item-two .data-form input {
+    font-size: 12px;
+    width: 100px;
+    height: 18px;
+  }
+  #item-two .data-form button {
+    font-size: 8px;
+    width: 100px;
+    height: 18px;
+  }
+
+
+  #item-three .container .content .wrapper h1 {
+    font-size: 14px;
+  }
+
+  #item-three .container .content h2 {
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+// ------->
+@media (max-width: 480px) {
+  .logo-image {
+    width: 75px;
+    height: 10px;
+  }
+  .kasko-image {
+    width: 20px;
+    margin-left: 6px
+  }
+
+  .icon-botton {
+    width: 7px;
+    height: 7px;
+    margin-right: 4px;
+  }
+  #item-one .container .header .button-consultation {
+    width: 105px;
+    height: 18px;
+    font-size: 8px;
+  }
+  #item-one .container .content .text-container h1 {
+    font-size: 12px;
+  }
+  #item-one .container .content p {
+    font-size: 10px;
+  }
+  #item-one .container .content span {
+    font-size: 10px;
+  }
+  #item-one select {
+    height: 15px;
+    font-size: 10px;
+    width: 80px;
+  }
+  #item-one button {
+    font-size: 10px;
+    width: 80px;
+    height: 15px;
+  }
+  #item-one .icons-firms {
+    height: 45px;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  #item-one .icon-footer {
+    font-size: 5px;
+    width: 35px;
+    height: 12px;
+  }
+  #item-one .text-footer, span {
+    font-size: 7px;
+  }
+  // -----> second section
+  #item-two .container .content h1 {
+    font-size: 10px;
+  }
+  #item-two .container .content .selected-offers ul li {
+    font-size: 7px;
+  }
+  #item-two .container .content .selected-offers span {
+    font-size: 7px;
+  }
+  #item-two .container .content .selected-offers .offers span {
+    font-size: 7px;
+  }
+  #item-two .container .content .selected-offers .offers h4 {
+    font-size: 7px;
+  }
+  #item-two .icons-offers {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  #item-two .data-form span {
+    font-size: 8px;
+  }
+  #item-two .data-form input {
+    font-size: 5px;
+    width: 70px;
+    height: 12px;
+  }
+  #item-two .data-form button {
+    font-size: 5px;
+    width: 70px;
+    height: 12px;
+  }
+
+
+  #item-three .container .content .wrapper h1 {
+    font-size: 12px;
+  }
+
+  #item-three .container .content h2 {
+    font-size: 10px;
+  }
+}
